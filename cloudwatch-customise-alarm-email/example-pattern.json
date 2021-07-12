@@ -1,0 +1,55 @@
+{
+  "title": "Customise cloudwatch alarm emails",
+  "description": "Customise cloudwatch alarms with lambda, ses and HTML templates",
+  "language": "Node.js",
+  "architectureURL": "https://github.com/AlessandroVol23/cloudwatch-custom-email-cdk/blob/main/architecture.png",
+  "videoId": "",
+  "level": "200",
+  "framework": "CDK",
+  "services": {
+    "from": "cloudwatch",
+    "to": "lambda"
+  },
+  "introBox": {
+    "headline": "How it works",
+    "text": [
+      "The SAM template deploys a Lambda function with permission to publish events to EventBridge. The Lambda function publishes an event to the default bus in EventBridge when invoked."
+    ]
+  },
+  "deploy": {
+    "text": ["cdk bootstrap", "cdk deploy"]
+  },
+  "gitHub": {
+    "template": {
+      "repoURL": "https://github.com/AlessandroVol23/cloudwatch-custom-email-cdk",
+      "templateURL": "https://github.com/AlessandroVol23/cloudwatch-custom-email-cdk",
+      "readmeURL": "https://github.com/AlessandroVol23/cloudwatch-custom-email-cdk/blob/main/README.md"
+    },
+    "payloads": [
+      {
+        "headline": "",
+        "payloadURL": ""
+      }
+    ]
+  },
+  "resources": {
+    "headline": "Additional resources",
+    "bullets": [
+      {
+        "text": "Integrating Amazon EventBridge into your serverless applications",
+        "link": "https://aws.amazon.com/blogs/compute/integrating-amazon-eventbridge-into-your-serverless-applications/"
+      },
+      {
+        "text": "Use Amazon EventBridge to Build Decoupled, Event-Driven Architectures",
+        "link": "https://serverlessland.com/learn/eventbridge"
+      }
+    ]
+  },
+  "author": {
+    "headline": "Presented by Alessandro Volpicella",
+    "name": "Alessandro Volpicella",
+    "imageURL": "https://www.volpee.de/static/sandro_img-3d8fffe581a2a7c6f3a7f2a39f9e6a16.jpg",
+    "twitter": "sandro_vol",
+    "bio": "Sandro is a fullstack engineer who builds and develops serverless applications on AWS."
+  }
+}
