@@ -1,4 +1,4 @@
-# AWS Service 1 to AWS Service 2
+# Cloudwatch customise alarm email
 
 This CDK template shows you how to customise a cloudwatch alarm. A standard approach for monitoring with cloudwatch is to receive email notifications in case an alarm starts. The default cloudwatch alarm notifications don't look really nice and are not very adaptable.
 
